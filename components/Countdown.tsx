@@ -6,38 +6,10 @@ interface CountDateProps {
 }
 
 const Countdown = ({ countDate }: CountDateProps) => {
-  //   const countDate = new Date("2023-12-20 00:00:00").getTime();
   const [timerDays, setTimerDays] = useState(0);
   const [timerHour, setTimerHour] = useState(0);
   const [timerMinute, setTimerMinute] = useState(0);
   const [timerSecond, setTimerSecond] = useState(0);
-
-  //   let interval: any;
-
-  //   const startTimer = () => {
-  //     const now = new Date().getTime();
-  //     const interval = setInterval(() => {
-  //       const gap = countDate - now;
-  //       const second = 1000;
-  //       const minute = second * 60;
-  //       const hour = minute * 60;
-  //       const day = hour * 24;
-
-  //       const cDay = Math.floor(gap / day);
-  //       const cHour = Math.floor((gap % day) / hour);
-  //       const cMinute = Math.floor((gap % hour) / minute);
-  //       const cSecond = Math.floor((gap % minute) / second);
-
-  //       if (gap < 0) {
-  //         clearInterval(interval.current);
-  //       } else {
-  //         setTimerDays(cDay);
-  //         setTimerHour(cHour);
-  //         setTimerMinute(cMinute);
-  //         setTimerSecond(cSecond);
-  //       }
-  //     }, 1000);
-  //   };
 
   useEffect(() => {
     const now = new Date().getTime();

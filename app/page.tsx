@@ -9,9 +9,9 @@ export default function Home() {
   const [date, setDate] = useState<number>(1682784000000);
 
   const onChange: DatePickerProps["onChange"] = (date, dateString) => {
-    console.log(date, dateString);
+    
     const selectedDate = new Date(`${dateString} 00:00:00`).getTime();
-    console.log(1111, selectedDate);
+   
     setDate(selectedDate);
   };
 
